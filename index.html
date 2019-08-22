@@ -26,8 +26,8 @@
         function initMap(){
             // Map options
             var options = {
-                zoom: 5,
-                center: {lat:29.7604, lng: -95.3698}
+                zoom: 4,
+                center: {lat: 39.04, lng: -95.69}
             }
 
             // New map
@@ -37,8 +37,6 @@
             for(var i = 0; i < markers.length; i++){
                 addMarker(markers[i])
             }
-            //addMarker({coords:{lat: 29.9511, lng: -90.0715}})
-            //add marker function
             function addMarker(props){
                 var marker = new google.maps.Marker({
                 position: props.coords,
